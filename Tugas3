@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Node {
+    char data;
+    Node* next;
+};
+
+int main() {
+    Node* top = nullptr;
+
+    string kata;
+    cout << "Masukkan sebuah kata : ";
+    cin >> kata;
+
+    for (int i = 0; i < kata.length(); i++) {
+        Node* baru = new Node();
+        baru->data = kata[i];
+        baru->next = top;
+        top = baru;
+    }
+
+    cout << "Kata terbalik : ";
+    while (top != nullptr) {
+        cout << top->data;
+        Node* hapus = top;
+        top = top->next;
+        delete hapus;
+    }
+    cout << endl;
+
+    return 0;
+}
