@@ -15,10 +15,15 @@ soal4_hash_table.cpp (Pengelolaan Data Mahasiswa Menggunakan Hash Table) Program
 
 Struktur Folder Proyek
 TugasLab_StrukturData/Quiz/
+
 ├── soal1_nilai_mahasiswa.cpp
+
 ├── soal2_perpustakaan.cpp
+
 ├── soal3_rute_kampus.cpp
+
 ├── soal4_hash_table.cpp
+
 └── README.md
 
 Cara Menjalankan Program
